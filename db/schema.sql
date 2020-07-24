@@ -1,13 +1,9 @@
-### Schema
-CREATE DATABASE travel_bucketlistDB;
-USE travel_bucketlistDB;
-
-CREATE TABLE travel_bucketlistDB;
+CREATE DATABASE travel_list_db;
+USE travel_list_db;
 
 CREATE TABLE travel 
 (
   id int NOT NULL AUTO_INCREMENT,
-  name varchar(300) NOT NULL,
-  place BOOLEAN DEFAULT false,
+  city_name VARCHAR(255) NOT NULL,
   PRIMARY KEY (id)
 );

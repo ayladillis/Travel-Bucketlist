@@ -20,9 +20,9 @@
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ```
-$ git clone 
-
-$ cd ayladillis/
+$ git clone git@github.com:ayladillis/Travel-Bucketlist.git
+ayladillis/Travel-Bucketlist.git
+$ cd ayladillis/ayladillis/Travel-Bucketlist.git
 ```
 Then open in your preferred text editor:
 - [vim](https://www.vim.org/) 
@@ -38,6 +38,11 @@ Then open in your preferred text editor:
 ## Technology
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip)
 * [Node.js](https://node.js.org/)
+* [Sequelize](https://sequelize.org/)
+* [HTML](https://en.wikipedia.org/wiki/HTML5)
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+* [Handlebars](https://handlebarsjs.com/)
+* [Express](https://expressjs.com/)
 
 
 ## Authors 

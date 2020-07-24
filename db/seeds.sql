@@ -1,3 +1,3 @@
-INSERT INTO travel (name, place) VALUES ('Mexico City', true);
+INSERT INTO travel (city_name) VALUES ('Orlando');
 
-INSERT INTO travel (name) VALUES ('New York');
+INSERT INTO travel (city_name) VALUES ('Mexico City');
