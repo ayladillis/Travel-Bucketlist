@@ -1,18 +1,40 @@
 <h1>Travel Bucketlist</h1>
+<h2>Add a destination of where you have been or want to go!</h2>
 
-<h3>Where do you want to go next?</h3>
+<h2>Places I've Been</h2>
 
 <ul>
-  {{#each tasks}}
-  	<li>
-  	   <p>ID: {{id}}</p>
-       <p>Flight: {{task}}</p>
-  	</li>
+  {{#each city}}
+    {{#unless place}}
+      {{> city/cit-block place=true}}
+    {{/unless}}
   {{/each}}
 </ul>
 
-<form action="/" method="POST">
-	<textarea type="text" name="task"></textarea>
+<h2>Places I Want to Go</h2>
 
-	<button type="submit">Submit</button>
+<ul>
+  {{#each city}}
+    {{#if place}}
+      {{> city/cit-block place=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+
+<h2>Add a City</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">City Name:</label>
+    <input type="text" id="city" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="destination"></label><br>
+    <input type="radio" name="place" value="1" checked> Been there!<br>
+    <input type="radio" name="place" value="0"> Want to go
+  </div>
+
+  <button type="submit">Add City</button>
 </form>

@@ -1,14 +1,13 @@
--- Drops the task_saver_db if it already exists --
-DROP DATABASE IF EXISTS travel_bucketlistDB;
-
--- Create the database task_saver_db and specified it for use.
+### Schema
 CREATE DATABASE travel_bucketlistDB;
-
 USE travel_bucketlistDB;
 
--- Create the table tasks.
-CREATE TABLE tasks (
-  id int NOT NULL AUTO_INCREMENT,
+CREATE TABLE travel_bucketlistDB;
 
+CREATE TABLE travel 
+(
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(300) NOT NULL,
+  place BOOLEAN DEFAULT false,
   PRIMARY KEY (id)
 );
