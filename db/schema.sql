@@ -5,5 +5,6 @@ CREATE TABLE travel
 (
   id int NOT NULL AUTO_INCREMENT,
   city_name VARCHAR(255) NOT NULL,
+  fly BOOLEAN DEFAULT false,
   PRIMARY KEY (id)
 );
