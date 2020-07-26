@@ -13,6 +13,8 @@ var mysql = require("mysql");
 
 var MYSQL_URL = process.env.JAWSDB_URL || "mysql://localhost:3306/cxkauw9r1gdr2q0n";
 
+
+
 // for Heroku
 var connection = mysql.createConnection(MYSQL_URL);
 
