@@ -12,9 +12,12 @@
 
 ## Objectives
 
+I created a Travel Bucketlist app with MySQL, Node, Express, Handlebars and a homemade ORM. Use Node and MySQL to query and route data in my app, and Handlebars to generate the HTML.
+
 
 ## Deploy Link
 
+https://frozen-wildwood-92430.herokuapp.com/
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
