@@ -5,7 +5,7 @@ var travel = require("../models/travel.js");
 // routes
 
 router.get("/", function(req, res) {
-    travel.all(function(data) {
+    travel.selectAll(function(data) {
       var hbsObject = {
         travel: data
       };
@@ -16,7 +16,7 @@ router.get("/", function(req, res) {
 
   router.post("/api/travel", function(req, res) {
     console.log(req.body);
-    travel.create([
+    travel.insertOne([
       "city_name", "fly"
     ], [
       req.body.name, req.body.fly === 'true'
@@ -29,7 +29,7 @@ router.get("/", function(req, res) {
   router.put("/api/travel/:id", function(req, res) {
     var condition = "id = " + req.params.id;
     console.log("condition", condition);
-    travel.update(
+    travel.updateOne(
       {
         fly: req.body.fly
       },
