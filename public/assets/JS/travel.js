@@ -25,7 +25,7 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newCat = {
+      var newTrip = {
         name: $("#ci").val().trim(),
         fly: $("[name=fly]:checked").val().trim()
       };
@@ -33,7 +33,7 @@ $(function() {
       // Send the POST request.
       $.ajax("/api/travel", {
         type: "POST",
-        data: newCat
+        data: newTrip
       }).then(
         function() {
           console.log("created new city");
