@@ -34,8 +34,9 @@ Then open in your preferred text editor:
 
 ## Code Highlight
 
+Here, on lines 4- 15 I connected to the JAWSDB as well as my local host using create connection, then on lines 17 and 18 I connected to my Heroku. 
 
-![code screenshot]()
+![code screenshot](image.png)
 
 
 ## Technology
