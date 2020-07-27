@@ -1,6 +1,6 @@
 # Travel-Bucketlist
 
-![gif demo]()
+![gif demo](https://media.giphy.com/media/huauEuRMEAVmDAZEtM/giphy.gif)
 
 ## Table of Content
 - Objective
